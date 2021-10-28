@@ -47,11 +47,12 @@ ui <- navbarPage(theme = "semo_mods.css",
     tabPanel("Data First",
              sidebarLayout(
     sidebarPanel(shinyjs::useShinyjs(),
+                 tags$style(HTML(".irs--shiny .irs-bar, .irs--shiny .irs-single {background: #9d2235;}")),
       sliderInput("num_taxa",
                   "Number of species:",
                   min = 5,
                   max = 12,
-                  value = 7,
+                  value = 5,
                   step = 1),
       p("Choose the number of taxa and then press the `New dataset` button.
                 Draw the tree from resulting character matrix. Each row represents one taxon,
@@ -78,7 +79,7 @@ tabPanel("Tree First",
                        "Number of species:",
                        min = 5,
                        max = 12,
-                       value = 7,
+                       value = 5,
                        step = 1),
            p("Choose the number of taxa and then press the `New tree` button.
                     Build the homology character matrix from the resulting tree. Make each row 
