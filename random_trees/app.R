@@ -52,7 +52,7 @@ ui <- navbarPage(theme = "semo_mods.css",
                   "Number of species:",
                   min = 5,
                   max = 12,
-                  value = 5,
+                  value = 6,
                   step = 1),
       p("Choose the number of taxa and then press the `New dataset` button.
                 Draw the tree from resulting character matrix. Each row represents one taxon,
@@ -79,7 +79,7 @@ tabPanel("Tree First",
                        "Number of species:",
                        min = 5,
                        max = 12,
-                       value = 5,
+                       value = 6,
                        step = 1),
            p("Choose the number of taxa and then press the `New tree` button.
                     Build the homology character matrix from the resulting tree. Make each row 
