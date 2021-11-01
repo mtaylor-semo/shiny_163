@@ -1,5 +1,5 @@
 # Project specific files that can be ignored.
-.DStore
+.DS_store
 
 # History files
 .Rhistory
